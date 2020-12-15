@@ -1,11 +1,12 @@
 {
   "name": "msw-requirejs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A repackage of msw compatible with requirejs",
   "main": "dist/msw-requirejs.js",
   "scripts": {
     "build": "rollup -c",
-    "test": "serve test/www"
+    "test": "serve test/www",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",

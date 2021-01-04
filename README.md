@@ -2,11 +2,11 @@
 
 A version of [msw](https://github.com/mswjs/msw) for [Require.js](https://requirejs.org/).
 
-As of version 0.24.2, msw does not export a version suitable for Require.JS. The umd version of the package [meant to be used with a CDN](https://mswjs.io/docs/recipes/usage-with-cdn) does not work in the browser [as described here](https://github.com/mswjs/msw/issues/507). A pull request for an iife version [has been opened](https://github.com/mswjs/msw/pull/509) and while that would somewhat work by providing a global variable, it is not an AMD compatible package like Require.JS prefers.
-
 This package is a simple wrapper around msw which re-exports the bundle in a UMD format that will work with Require.JS. There is no logic, just re-packaging. For msw help and assistance, visit https://mswjs.io/
 
 Using msw with Karma+Require.js is a good use case for this package, as well as any application using Require.js.
+
+Note that an iife bundle is available for msw@^0.25.0. Consider using that version if you would like to use msw in a browser without Webpack or Require.js.
 
 ## Usage
 
@@ -57,7 +57,7 @@ Run `npm run test` and open the console to see msw in action
 ```bash
 $ cd examples/with-karma
 $ npm install
-$ npm run test
+$ npm test
 ```
 
 Open the console, or click on the "Debug" button to see an example of mocking a fetch call in a requirejs application.

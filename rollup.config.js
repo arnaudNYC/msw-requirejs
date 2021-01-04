@@ -12,7 +12,7 @@ export default [
     input,
     plugins: [
       replace({
-        'process.env.NODE_ENV': JSON.stringify('development')
+        'process.env.NODE_ENV': JSON.stringify('production')
       }),
       nodeResolve({
         moduleDirectories: ['node_modules']

@@ -1,6 +1,6 @@
 {
   "name": "msw-requirejs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A repackage of msw compatible with requirejs",
   "main": "dist/msw-requirejs.js",
   "scripts": {
